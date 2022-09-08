@@ -1,7 +1,8 @@
 :root {
-  --green: #57ad21;
+  --green: #79A208;
+  --background-svg: #d3deb2;
   --text: #2a2a2a;
-  --title-green:#1b3708;
+  --title-green:#0C3C00;
   --grey: #757575;
   --white: #ffffff;
   --middle-white: #ececec;
@@ -27,6 +28,11 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 a {
   text-decoration: none;
@@ -58,38 +64,54 @@ a {
   border: 1px solid var(--middle-white);
 }
 .header-container {
-  display: flex;
+  /* display: flex; */
 }
 .header-nav-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-.header-logo {
+.header-logo{
+padding: 10px 0;
+}
+.header-logo-first-text{
+    text-transform: capitalize;
+      font-family: 'Noto Serif:ital',
+        serif;
+      font-size: 46px;
+      font-weight: 700;
+      line-height: 1.19em;
+      color:var(--green);
+      text-decoration: none;
+}
+.header-logo-second-text{
   text-transform: capitalize;
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.19em;
-  color: #212121;
-  text-decoration: none;
-  margin-right: 93px;
-  padding: 25px 0;
-}
-.header-span-logo {
-  color: var(--green);
+    font-family: 'Noto Serif:ital',
+      serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.19em;
+    color: var(--title-green);
+    text-decoration: none;
+
 }
 .header-list-nave {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
-.header-item:not(:last-child) {
+/* .header-item:not(:last-child) {
   margin-right: 50px;
+} */
+.header-item{
+  margin-right: 70px;
 }
-
 .header-nave {
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 25px;
   line-height: 1.14em;
-  padding: 32px 0;
+  padding: 30px 0;
 }
 
 .header-list-nave .nave {
@@ -103,7 +125,7 @@ a {
   border-radius: 2px;
   display: block;
   position: absolute;
-  top: 60px;
+  top: 65px;
 }
 /* .header-liner-portfolio::after {
   content: "";
@@ -193,7 +215,7 @@ a {
       rgba(160, 162, 165, 0.4),
       rgba(127, 127, 130, 0.4)
     ),
-    url("../images/441802_1.png");
+    url("../images/hero-img.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -342,40 +364,73 @@ a {
   padding: 27px 0;
 }
 
-/*-- TEAM --*/
+/*--ABOUTPLANTS--*/
 
-.section-team {
-  background-color: var(--light-grey);
-}
-.team-title {
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  margin-bottom: 50px;
+.section-aboutplants {
+  background-color: var(--aboutus);
+  padding: 50px 70px;
 }
 
-.team-card-specialist {
+.aboutplants-wrapper {
   display: flex;
   flex-basis: auto;
   justify-content: space-between;
 }
+.aboutplants-card {
+ display: flex;
+ flex-direction: column;
+align-items: flex-start;
+ flex-wrap: wrap;
+ align-content: flex-start;
+ justify-content: space-around;
+  width: 330px;
+  height: 500px;
+  padding: 30px 40px 50px 50px;
+  background-color: var(--white);
+  border-radius: 6px;
+  border-top: 7px solid var(--green);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.aboutplants-wrapper-svg{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: var(--background-svg);
 
-.team-specialist-title {
-  font-weight: 500;
-  font-size: 16px;
+}
+.aboutplants-title {
+    font-family: 'Noto Serif:ital', serif;
+  font-weight: 900;
+  font-size: 35px;
+  color: var(--title-green);
   line-height: 1.18em;
   letter-spacing: 0.03em;
-  padding-top: 30px;
-  margin-bottom: 10px;
 }
-.team-specialist-name {
-  font-size: 16px;
+.aboutplants-description {
+  font-size: 23px;
+  font-weight: 400;
   line-height: 1.18em;
   color: var(--grey);
   letter-spacing: 0.03em;
-  margin-bottom: 16px;
 }
-.team-social-link {
+.aboutplants-button{
+  cursor: pointer;
+  font-weight: 600;
+    padding: 20px 32px;
+    font-size: 14px;
+    line-height: 1.87em;
+    color: var(--title-green);
+    background-color: transparent;
+    min-width: 100px;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+}
+/* .team-social-link {
   width: 44px;
   height: 44px;
   background-color: var(--white);
@@ -416,28 +471,82 @@ a {
 }
 .team-social-item:last-child {
   margin-right: 0;
-}
+} */
 
-.team-member {
-  padding-top: 0;
-  padding-bottom: 20px;
-  text-align: center;
+
+/*-- OURPLANTS --*/
+
+.ourplants-section{
   background-color: var(--white);
-  border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 50px 70px;
 }
-
-/*-- BRAND --*/
-
-.brand-title {
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: Center;
-  letter-spacing: 3%;
+.ourplants-title-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid var(--middle-grey);
+  margin-bottom: 40px;
+}
+.ourplants-title {
+  font-family: 'Noto Serif:ital', serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 1.14em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: var(--title-green);
+}
+.ourplants-up-title{
+font-weight: 900;
   margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 1.74em;
+  color: var(--green);
+  letter-spacing: 0.03em;
 }
-.brand-logo-ticket {
+.ourplants-bottom-title{
+font-weight: 400;
+  font-size: 25px;
+  line-height: 1.14em;
+color:var(--title-green);
+margin-bottom: 70px;
+}
+.ourplants-button-wrapper{
+
+}
+.ourplants-button{
+  cursor: pointer;
+  background-color:transparent;
+  border: none;
+  padding: 20px;
+  color: var(--green);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+}
+.ourplants-button:hover
+.ourplants-button:focus{
+  color: var(--title-green);
+
+}
+.ourplants-list{
+  display: flex;
+    flex-basis: auto;
+    justify-content: space-between;
+}
+.ourplants-img{
+  width: 470px;
+  height: 530px;
+  border-radius: 10px;
+}
+
+
+/* .brand-logo-ticket {
   display: flex;
   justify-content: space-between;
 }
@@ -455,7 +564,7 @@ a {
   border: 2px solid var(--blue);
   cursor: pointer;
   fill: var(--blue);
-}
+} */
 
 /*-- FOOTER --*/
 

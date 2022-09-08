@@ -17,17 +17,21 @@
     <!--HEADER-->
 
     <header class="header">
-      <div class="container header-container">
+      <div class="header-container">
         <nav class="header-nav-container">
-          <a class="header-logo" href="./index.html"
-            ><span class="header-span-logo">Plant</span>Land</a
-          >
+          <a class="header-logo" href="./index.html">
+            <svg class="" width="90px" height="70px">
+              <use href="./images/symbol-defs.svg#plants"></use>
+            </svg>
+            <span class="header-logo-first-text">Plant</span
+            ><span class="header-logo-second-text">Land</span>
+          </a>
           <ul class="header-list-nave">
             <li class="header-item header-liner-about-us">
-              <a class="link header-nave nave" href="./index.html">About us</a>
+              <a class="link header-nave nave" href="#aboutus">About us</a>
             </li>
             <li class="header-item">
-              <a class="link header-nave" href="./portfolio.html">Plants</a>
+              <a class="link header-nave" href=".#ourplants">Plants</a>
             </li>
             <li class="header-item">
               <a class="link header-nave" href="">Pick of the Month</a>
@@ -72,7 +76,7 @@
 
       <!----ABOUT US----->
 
-      <section class="section aboutus">
+      <section class="section aboutus" id="aboutus">
         <!-- <div class="container"> -->
         <div class="aboutus-section">
           <div class="aboutus-write-section">
@@ -101,7 +105,7 @@
           </div>
           <div class="aboutus-left-section">
             <img
-              src="./images/5ed8ce9c0343780021056d73_optimized_1229.jpg"
+              src="./images/aboutus-img.png"
               alt="different plants"
               width="800"
             />
@@ -165,7 +169,7 @@
 
       <!-----ENGAGE------->
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="engage-caption-title">Чем мы занимаемся</h2>
           <ul class="engage-photo">
@@ -189,237 +193,334 @@
             </li>
           </ul>
         </div>
+      </section> -->
+
+      <!----ABOUTPLANTS--------->
+
+      <section class="section section-aboutplants">
+        <!-- <div class="container"> -->
+        <ul class="aboutplants-wrapper">
+          <li class="aboutplants-card">
+            <div class="aboutplants-wrapper-svg">
+              <svg class="" width="90px" height="90px">
+                <use href="./images/symbol-defs.svg#plants-about-1"></use>
+              </svg>
+            </div>
+            <h3 class="aboutplants-title">Consultations</h3>
+            <p class="aboutplants-description">
+              We not only sell plants and everything related to them but are
+              also ready to answer any of your questions! Contact us to select
+              the best plant!
+            </p>
+            <button data-modal-open class="aboutplants-button" type="button">
+              LEARN MORE...
+            </button>
+            <!-- <ul class="team-social-list">
+              <li class="team-social-item">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="20px" height="20px">
+                    <use
+                      href="./images/symbol-defs.svg#icon-instagram-2-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="team-social-item">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-twitter-1-1"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="team-social-item">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="20px" height="20px">
+                    <use
+                      href="./images/symbol-defs.svg#icon-facebook-1-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="20px" height="20">
+                    <use
+                      href="./images/symbol-defs.svg#icon-linkedin-1-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul> -->
+          </li>
+
+          <li class="aboutplants-card">
+            <div class="aboutplants-wrapper-svg">
+              <svg class="" width="90px" height="90px">
+                <use href="./images/symbol-defs.svg#plants-about-2"></use>
+              </svg>
+            </div>
+            <h3 class="aboutplants-title">Plants for Home</h3>
+            <p class="aboutplants-description">
+              We offer a huge selection of flowers and evergreens that will be a
+              joy to see for many years. A charming plant will be a great
+              addition to the interior.
+            </p>
+            <button data-modal-open class="aboutplants-button" type="button">
+              LEARN MORE...
+            </button>
+            <!-- <ul class="team-social-list">
+              <li class="team-social-item">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="20px" height="20px">
+                    <use
+                      href="./images/symbol-defs.svg#icon-instagram-2-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-twitter-1-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="20px" height="20px">
+                    <use
+                      href="./images/symbol-defs.svg#icon-facebook-1-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="20px" height="20">
+                    <use
+                      href="./images/symbol-defs.svg#icon-linkedin-1-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul> -->
+          </li>
+
+          <li class="aboutplants-card">
+            <div class="aboutplants-wrapper-svg">
+              <svg class="" width="90px" height="90px">
+                <use href="./images/symbol-defs.svg#plants-about-3"></use>
+              </svg>
+            </div>
+            <h3 class="aboutplants-title">Plants for Garden</h3>
+            <p class="aboutplants-description">
+              Turn your yard into a colorful lawn! Here you will find dozens of
+              varieties of flowers, both in the form of seeds, and already
+              sprouted.
+            </p>
+            <button data-modal-open class="aboutplants-button" type="button">
+              LEARN MORE...
+            </button>
+            <!-- <ul class="team-social-list">
+              <li class="team-social-item">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="20px" height="20px">
+                    <use
+                      href="./images/symbol-defs.svg#icon-instagram-2-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-twitter-1-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="20px" height="20px">
+                    <use
+                      href="./images/symbol-defs.svg#icon-facebook-1-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="20px" height="20">
+                    <use
+                      href="./images/symbol-defs.svg#icon-linkedin-1-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul> -->
+          </li>
+
+          <li class="aboutplants-card">
+            <div class="aboutplants-wrapper-svg">
+              <svg class="" width="90px" height="90px">
+                <use href="./images/symbol-defs.svg#plants-about-4"></use>
+              </svg>
+            </div>
+            <h3 class="aboutplants-title">Sale of Flowerpots</h3>
+            <p class="aboutplants-description">
+              Purchase flowerpots for plants of any type, from small flowers to
+              huge palm trees. Our store offers only quality flowerpots from
+              trusted manufacturers.
+            </p>
+            <button data-modal-open class="aboutplants-button" type="button">
+              LEARN MORE...
+            </button>
+            <!-- <ul class="team-social-list">
+              <li class="team-social-item">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="20px" height="20px">
+                    <use
+                      href="./images/symbol-defs.svg#icon-instagram-2-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-twitter-1-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="20px" height="20px">
+                    <use
+                      href="./images/symbol-defs.svg#icon-facebook-1-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="20px" height="20">
+                    <use
+                      href="./images/symbol-defs.svg#icon-linkedin-1-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul> -->
+          </li>
+        </ul>
+        <!-- </div> -->
       </section>
 
-      <!----TEAM--------->
+      <!----OURPLANTS------->
 
-      <section class="section section-team">
-        <div class="container">
-          <h2 class="team-title">Наша команда</h2>
-          <ul class="team-card-specialist">
-            <li class="team-member">
-              <img src="./images/img1.jpg" alt="фото" width="270" />
-
-              <h3 class="team-specialist-title">Игорь Демьяненко</h3>
-              <p class="team-specialist-name">Product Designer</p>
-              <ul class="team-social-list">
-                <li class="team-social-item">
-                  <a href="" class="team-social-link">
-                    <svg class="team-social-icon" width="20px" height="20px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-instagram-2-1"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="team-social-item">
-                  <a href="" class="team-social-link">
-                    <svg class="team-social-icon" width="20px" height="20px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-twitter-1-1"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="team-social-item">
-                  <a href="" class="team-social-link">
-                    <svg class="team-social-icon" width="20px" height="20px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-facebook-1-1"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-social-item">
-                  <a href="" class="team-social-link">
-                    <svg class="team-social-icon" width="20px" height="20">
-                      <use
-                        href="./images/symbol-defs.svg#icon-linkedin-1-1"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="team-member">
-              <img src="./images/img2.jpg" alt="фото" width="270" />
-
-              <h3 class="team-specialist-title">Ольга Репина</h3>
-              <p class="team-specialist-name">Frontend Developer</p>
-              <ul class="team-social-list">
-                <li class="team-social-item">
-                  <a href="" class="team-social-link">
-                    <svg class="team-social-icon" width="20px" height="20px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-instagram-2-1"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-social-item">
-                  <a href="" class="team-social-link">
-                    <svg class="team-social-icon" width="20px" height="20px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-twitter-1-1"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-social-item">
-                  <a href="" class="team-social-link">
-                    <svg class="team-social-icon" width="20px" height="20px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-facebook-1-1"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-social-item">
-                  <a href="" class="team-social-link">
-                    <svg class="team-social-icon" width="20px" height="20">
-                      <use
-                        href="./images/symbol-defs.svg#icon-linkedin-1-1"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="team-member">
-              <img src="./images/img3.jpg" alt="фото" width="270" />
-
-              <h3 class="team-specialist-title">Николай Тарасов</h3>
-              <p class="team-specialist-name">Marketing</p>
-              <ul class="team-social-list">
-                <li class="team-social-item">
-                  <a href="" class="team-social-link">
-                    <svg class="team-social-icon" width="20px" height="20px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-instagram-2-1"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-social-item">
-                  <a href="" class="team-social-link">
-                    <svg class="team-social-icon" width="20px" height="20px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-twitter-1-1"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-social-item">
-                  <a href="" class="team-social-link">
-                    <svg class="team-social-icon" width="20px" height="20px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-facebook-1-1"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-social-item">
-                  <a href="" class="team-social-link">
-                    <svg class="team-social-icon" width="20px" height="20">
-                      <use
-                        href="./images/symbol-defs.svg#icon-linkedin-1-1"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="team-member">
-              <img src="./images/img4.jpg" alt="фото" width="270" />
-
-              <h3 class="team-specialist-title">Михаил Ермаков</h3>
-              <p class="team-specialist-name">UL Designer</p>
-              <ul class="team-social-list">
-                <li class="team-social-item">
-                  <a href="" class="team-social-link">
-                    <svg class="team-social-icon" width="20px" height="20px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-instagram-2-1"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-social-item">
-                  <a href="" class="team-social-link">
-                    <svg class="team-social-icon" width="20px" height="20px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-twitter-1-1"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-social-item">
-                  <a href="" class="team-social-link">
-                    <svg class="team-social-icon" width="20px" height="20px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-facebook-1-1"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-social-item">
-                  <a href="" class="team-social-link">
-                    <svg class="team-social-icon" width="20px" height="20">
-                      <use
-                        href="./images/symbol-defs.svg#icon-linkedin-1-1"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+      <section class="section ourplants-section" id="ourplants">
+        <!-- <div class="container"> -->
+        <div class="ourplants-title-wrapper">
+          <p class="ourplants-up-title">―WHAT WE OFFER―</p>
+          <h4 class="ourplants-title">Our Plants</h4>
+          <p class="ourplants-bottom-title">
+            We sell both indoor and outdoor varieties of plants.
+          </p>
+          <div class="ourplants-button-wrapper">
+            <button class="ourplants-button" type="button">INDOOR</button>
+            <button class="ourplants-button" type="button">OUTDOOR</button>
+          </div>
         </div>
-      </section>
+        <ul class="ourplants-list">
+          <li>
+            <img
+              class="ourplants-img"
+              src="./images/indoor-1.png"
+              alt="flowers"
+            />
+            <p>Small Ornamental Plants</p>
+            <p>
+              Such plants will fit on any windowsill, decorate your home or work
+              table. Chlorophytum, money plants, aglaonema are not demanding in
+              care but very beautiful.
+            </p>
+          </li>
+          <li>
+            <img
+              class="ourplants-img"
+              src="./images/indoor-2.png"
+              alt="flowers"
+            />
+            <p>Indoor Trees</p>
+            <p>
+              It's a beautiful and original option for a large room. A small
+              indoor tree will add some zest to the office or a large living
+              room. Large dracaena, ficus, alocasia will be a great option for
+              your space.
+            </p>
+          </li>
+          <li>
+            <img
+              class="ourplants-img"
+              src="./images/indoor-3.png"
+              alt="flowers"
+            />
+            <p>Plants in Florarium</p>
+            <p>
+              These are neatly planted compositions of succulents, grassroots,
+              decorative ferns. Plants are selected so that they are in perfect
+              harmony. Order your unique set of plants!
+            </p>
+          </li>
+          <li>
+            <img
+              class="ourplants-img"
+              src="./images/indoor-4.png"
+              alt="flowers"
+            />
+            <p>Big Ornamental Plants</p>
+            <p>
+              Charming pachypodium, yucca, monstera will become a stunning
+              decoration of your room or office. These plants will make a great
+              impression on your guests.
+            </p>
+          </li>
+        </ul>
 
-      <!----BRAND------->
-
-      <section class="section brand-logo">
-        <div class="container">
-          <h4 class="brand-title">Постоянные клиенты</h4>
-          <ul class="brand-logo-ticket">
-            <li class="">
-              <svg class="brand-logo-icon" width="170px" height="92px">
-                <use href="./images/symbol-defs.svg#icon-Logo-6"></use>
-              </svg>
-            </li>
-            <li class="">
-              <svg class="brand-logo-icon" width="170px" height="92px">
-                <use href="./images/symbol-defs.svg#icon-Logo-1-1"></use>
-              </svg>
-            </li>
-            <li class="">
-              <svg class="brand-logo-icon" width="170px" height="92px">
-                <use href="./images/symbol-defs.svg#icon-Logo-2-1"></use>
-              </svg>
-            </li>
-            <li class="">
-              <svg class="brand-logo-icon" width="170px" height="92px">
-                <use href="./images/symbol-defs.svg#icon-Logo-3-1"></use>
-              </svg>
-            </li>
-            <li class="">
-              <svg class="brand-logo-icon" width="170px" height="92px">
-                <use href="./images/symbol-defs.svg#icon-Logo-4-1"></use>
-              </svg>
-            </li>
-            <li class="">
-              <svg class="brand-logo-icon" width="170px" height="92px">
-                <use href="./images/symbol-defs.svg#icon-Logo-5-1"></use>
-              </svg>
-            </li>
-          </ul>
-        </div>
+        <!-- <ul class="brand-logo-ticket">
+          <li class="">
+            <svg class="brand-logo-icon" width="170px" height="92px">
+              <use href="./images/symbol-defs.svg#icon-Logo-6"></use>
+            </svg>
+          </li>
+          <li class="">
+            <svg class="brand-logo-icon" width="170px" height="92px">
+              <use href="./images/symbol-defs.svg#icon-Logo-1-1"></use>
+            </svg>
+          </li>
+          <li class="">
+            <svg class="brand-logo-icon" width="170px" height="92px">
+              <use href="./images/symbol-defs.svg#icon-Logo-2-1"></use>
+            </svg>
+          </li>
+          <li class="">
+            <svg class="brand-logo-icon" width="170px" height="92px">
+              <use href="./images/symbol-defs.svg#icon-Logo-3-1"></use>
+            </svg>
+          </li>
+          <li class="">
+            <svg class="brand-logo-icon" width="170px" height="92px">
+              <use href="./images/symbol-defs.svg#icon-Logo-4-1"></use>
+            </svg>
+          </li>
+          <li class="">
+            <svg class="brand-logo-icon" width="170px" height="92px">
+              <use href="./images/symbol-defs.svg#icon-Logo-5-1"></use>
+            </svg>
+          </li>
+        </ul> -->
+        <!-- </div> -->
       </section>
     </main>
 
