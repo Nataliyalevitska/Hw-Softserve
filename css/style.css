@@ -9,6 +9,7 @@
   --light-grey: #dfdde8;
   --middle-grey: #afb1b8;
   --aboutus: #e7dde2;
+  --contacts-info: #e7c3e7;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -262,7 +263,6 @@ padding: 10px 0;
   margin-bottom: 30px;
 } */
 .aboutus{
-  background-color: var(--aboutus);
       min-height: 600px;
       padding: 50px 70px;
 }
@@ -365,9 +365,10 @@ padding: 10px 0;
 }
 
 /*--ABOUTPLANTS--*/
-
+.wrapper{
+background:linear-gradient(30deg, #d3deb2, #e9d4e9);
+}
 .section-aboutplants {
-  background-color: var(--aboutus);
   padding: 50px 70px;
 }
 
@@ -477,7 +478,6 @@ align-items: flex-start;
 /*-- OURPLANTS --*/
 
 .ourplants-section{
-  background-color: var(--white);
   padding: 50px 70px;
 }
 .ourplants-title-wrapper{
@@ -516,7 +516,7 @@ color:var(--title-green);
 margin-bottom: 70px;
 }
 .ourplants-button-wrapper{
-
+display: flex;
 }
 .ourplants-button{
   cursor: pointer;
@@ -529,15 +529,46 @@ margin-bottom: 70px;
   line-height: 1.14em;
   letter-spacing: 0.03em;
 }
-.ourplants-button:hover
+.ourplants-button:hover,
 .ourplants-button:focus{
   color: var(--title-green);
-
+}
+.nave-button::after{
+  content: "";
+    width: 90px;
+    height: 4px;
+    background-color: var(--green);
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+}
+.ourplants-description-title{
+font-family: 'Noto Serif:ital', serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.14em;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: var(--title-green);
+}
+.ourplants-description-subtitle{
+  font-size: 18px;
+    font-weight: 400;
+    line-height: 1.18em;
+    color: var(--grey);
 }
 .ourplants-list{
   display: flex;
     flex-basis: auto;
     justify-content: space-between;
+}
+.ourplants-card{
+ width: 470px;
+ height: 750px;
+ display: flex;
+ flex-direction: column;
+flex-wrap: wrap;
+ justify-content: flex-start;
 }
 .ourplants-img{
   width: 470px;
@@ -546,32 +577,218 @@ margin-bottom: 70px;
 }
 
 
-/* .brand-logo-ticket {
+/* ----OURCONTACTS------- */
+
+.ourcontacts-section{
+  text-align: center;
+    min-height: 500px;
+    /* max-width: 1600px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0;
+    background-image: linear-gradient(rgba(160, 162, 165, 0.4),
+      rgba(127, 127, 130, 0.4)),
+      url("../images/ourcontacts-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ourcontacts-title{
+  font-family: 'Noto Serif:ital', serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1.14em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: var(--middle-white);
+}
+.ourcontacts-list{
+  display: flex;
+  flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+}
+.ourcontacts-subtitle{
+  display:inline-flex;
+  font-family: 'Noto Serif:ital', serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.14em;
+    margin-top: 30px;
+    margin-right: 30px;
+    color: var(--middle-white);
+}
+.ourcontacts-info{
+  font-family: 'Noto Serif:ital', serif;
+  font-weight: 600;
+    font-size: 30px;
+    line-height: 1.14em;
+    color: var(--contacts-info);
+}
+
+
+/* ----PRICING---- */
+
+.pricing-section{
+background: linear-gradient(30deg, #d3deb2, #e9d4e9);
+    padding: 50px 70px;
+}
+.pricing-title-wrapper{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid var(--middle-grey);
+    margin-bottom: 40px;
+}
+
+.pricing-up-title{
+  font-weight: 900;
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 1.74em;
+    color: var(--green);
+    letter-spacing: 0.03em;
+}
+.pricing-title{
+  font-family: 'Noto Serif:ital', serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 1.14em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: var(--title-green);
+}
+.description-button-wrapper{
+  display: flex;
+}
+.description-button{
+    cursor: pointer;
+      background-color: transparent;
+      border: none;
+      padding: 20px;
+      color: var(--green);
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.14em;
+      letter-spacing: 0.03em;
+}
+.description-button:hover,
+.description-button:focus{
+  color: var(--title-green);
+}
+.description-nave-button::after{
+  content: "";
+    width: 145px;
+    height: 4px;
+    background-color: var(--green);
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+}
+.pricing-list{
+  display: flex;
+    flex-basis: auto;
+    justify-content: space-between;
+}
+.pricing-card{
+  width: 470px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      align-items: center;
+}
+.pricing-img{
+  width: 470px;
+    height: 530px;
+    border-radius: 10px;
+}
+.pricing-description-title{
+  font-family: 'Noto Serif:ital', serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.14em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: var(--title-green);
+}
+.pricing-description-subtitle{
+  font-weight: 700;
+    font-size: 30px;
+      line-height: 1.18em;
+      color: var(--green);
+}
+.price-button{
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  background-color: var(--green);
+  color: var(--middle-white);
+  padding: 30px;
+  width: 160px;
+  font-weight: 700;
+    font-size: 14px;
+}
+.price-button:hover,
+.price-button:focus{
+  background-color: var(--title-green);
+}
+
+/* ----OURCUSTOMERS------ */
+
+.ourcustomer-section {
+  background-image: url("../images/footer-background.jpg");
+}
+
+.ourcustomer-wrapper {
+  width: 300px;
+  height: 190px;
+  background-color: var(--title-green);
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  border-radius: 4px;
+  border: 3px solid var(--green);
+  box-shadow: 0px 10px 10px rgba(62, 124, 30, 0.479), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    2px 0px 30px rgba(68, 183, 10, 0.479);
+}
+
+.ourcustomer-title {
+  font-family: 'Noto Serif:ital', serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: var(--middle-white);
+  display: flex;
+  justify-content: center;
+}
+
+.ourcustomer-list {
   display: flex;
   justify-content: space-between;
 }
-.brand-logo-icon {
-  border: 2px solid var(--middle-grey);
-  border-radius: 4px;
-  fill: var(--middle-grey);
 
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.brand-logo-icon:hover,
-.brand-logo-icon:focus {
-  border: 2px solid var(--blue);
-  cursor: pointer;
-  fill: var(--blue);
-} */
+
+
+
+
 
 /*-- FOOTER --*/
 
 .footer {
   display: flex;
   justify-content: space-between;
-  background-color: var(--hero-grey);
+  background-color: var(--title-green);
   padding: 60px 215px;
 }
 .footer-adres {
@@ -591,18 +808,40 @@ margin-bottom: 70px;
   justify-content: space-between;
   margin-top: 20px;
 }
-.footer-studio {
+/* .footer-studio {
   color: var(--white);
   text-transform: capitalize;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: calc(31 / 26);
   text-decoration: none;
-}
-.footer-logo {
+} */
+/* .footer-logo {
   color: var(--blue);
+} */
+.footer-logo-first-text{
+  text-transform: capitalize;
+    font-family: 'Noto Serif:ital',
+      serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.19em;
+    color: var(--green);
+    text-decoration: none;
 }
-
+.footer-logo-second-text{
+  text-transform: capitalize;
+    font-family: 'Noto Serif:ital',
+      serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.19em;
+    color: var(--middle-white);
+    text-decoration: none;
+}
+.footer-svg{
+  fill: var(--middle-white);
+}
 .footer-address-title {
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -683,7 +922,7 @@ margin-bottom: 70px;
 
   display: block;
   align-items: center;
-  background: #2196f3;
+  background:var(--green);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: var(--blue);
