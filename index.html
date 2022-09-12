@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PlantLand</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +17,7 @@
     <!--HEADER-->
 
     <header class="header">
-      <div class="header-container">
+      <div class="container header-container">
         <nav class="header-nav-container">
           <a class="header-logo" href="./index.html">
             <svg class="" width="90px" height="70px">
@@ -34,9 +34,6 @@
               <a class="link header-nave" href=".#ourplants">Plants</a>
             </li>
             <li class="header-item">
-              <a class="link header-nave" href="">Pick of the Month</a>
-            </li>
-            <li class="header-item">
               <a class="link header-nave" href=".#pricing">Pricing</a>
             </li>
             <li class="header-item">
@@ -46,7 +43,13 @@
               <a class="link header-nave" href=".#ourcontacts">Contact us</a>
             </li>
           </ul>
+             <button data-menu-open class="header-btn" type="button">
+          <svg class="header-icon-menu" width="60px" height="60px">
+            <use href="./images/symbol-defs.svg#menu-mob"></use>
+          </svg>
+        </button>
         </nav>
+        
       </div>
     </header>
 
@@ -65,19 +68,21 @@
             plants that <br />
             are suitable for growing exactly in your conditions.
           </p>
+          <div class="hero-button-wrapper">
           <button data-modal-open class="hero-button active-now" type="button">
             BEST PLANTS >
           </button>
           <button data-modal-open class="hero-button" type="button">
             LEARN MORE >
           </button>
+          </div>
         </div>
       </section>
 
       <!----ABOUT US----->
-<div class="wrapper">
+ <div class="wrapper">
       <section class="section aboutus" id="aboutus">
-        <!-- <div class="container"> -->
+        <div class="container">
         <div class="aboutus-section">
           <div class="aboutus-write-section">
             <p class="aboutus-uptitle">―ABOUT US―</p>
@@ -103,25 +108,23 @@
               BROWSE PLANTS
             </button>
           </div>
-          <div class="aboutus-left-section">
-            <img
+            <img class="aboutus-img"
               src="./images/aboutus-img.png"
               alt="different plants"
-              width="800"
+              width="300"
             />
-          </div>
         </div>
-        <!-- </div> -->
+        </div>
       </section>
     
-      <!----ABOUTPLANTS--------->
-
-      <section class="section section-aboutplants">
-        <!-- <div class="container"> -->
+      <!------ABOUTPLANTS--------->
+ 
+       <section class="section section-aboutplants">
+        <div class="container">
         <ul class="aboutplants-wrapper">
           <li class="aboutplants-card">
             <div class="aboutplants-wrapper-svg">
-              <svg class="" width="90px" height="90px">
+              <svg class="">
                 <use href="./images/symbol-defs.svg#plants-about-1"></use>
               </svg>
             </div>
@@ -187,13 +190,13 @@
             </button>
           </li>
         </ul>
-        <!-- </div> -->
+        </div>
       </section>
 
       <!----OURPLANTS------->
 
-      <section class="section ourplants-section" id="ourplants">
-        <!-- <div class="container"> -->
+      <!-- <section class="section ourplants-section" id="ourplants">
+        <div class="container">
         <div class="ourplants-title-wrapper">
           <p class="ourplants-up-title">―WHAT WE OFFER―</p>
           <h4 class="ourplants-title">Our Plants</h4>
@@ -262,12 +265,12 @@
             </p>
           </li>
         </ul>
-        <!-- </div> -->
+        </div>
       </section>
-</div>
+</div>  -->
       <!-----OURCONTACTS---->
 
-      <section class="section ourcontacts-section" id="ourcontacts">
+      <!-- <section class="section ourcontacts-section" id="ourcontacts">
         <div class="container">
           <h3 class="ourcontacts-title">Want to Visit Our Greenhouse?</h3>
           <ul class="ourcontacts-list">
@@ -295,12 +298,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!----PRICING----->
-
+<!-- 
       <section class="section pricing-section" id="pricing">
-        <!-- <div class="container"> -->
+        <div class="container">
         <div class="pricing-title-wrapper">
           <p class="pricing-up-title">― BESTSELLERS ―</p>
           <h4 class="pricing-title">Plants of the Month</h4>
@@ -365,56 +368,56 @@
            <button class="price-button" type="button">ORDER NOW</button>
           </li>
         </ul>
-         <!-- </div> -->
-      </section>
+         </div>
+      </section> -->
 
        <!----OURCUSTOMERS------->
 
-      <section class="section ourcustomer-section" id="ourcustomers">
-        <!-- <div class="container"> -->
+      <!-- <section class="section ourcustomer-section" id="ourcustomers">
+        <div class="container">
           <h4 class="ourcustomer-title">OUR REGULAR CUSTOMERS</h4>
           <ul class="ourcustomer-list">
             <li class="ourcustomer-wrapper">
               <img 
                 src="./images/ourcustomers-1.png"
-              alt="logo"
+              alt="logo" width="300px" height="150px"
               />
             </li>
             <li class="ourcustomer-wrapper">
               <img  
                 src="./images/ourcustomers-2.png"
-              alt="logo"
+              alt="logo"  width="300px" height="150px"
               />
             </li>
 
             <li class="ourcustomer-wrapper">
               <img 
                 src="./images/ourcustomers-3.png"
-                alt="logo"
+                alt="logo"  width="300px" height="150px"
               />
             </li>
 
             <li class="ourcustomer-wrapper">
               <img
                 src="./images/ourcustomers-4.png"
-                alt="logo"/>
+                alt="logo"  width="300px" height="150px"/>
             </li>
 
             <li class="ourcustomer-wrapper">
               <img 
                  src="./images/ourcustomers-5.png"
-                 alt="logo"/>
+                 alt="logo"  width="300px" height="150px"/>
             </li>
           </ul>
-        <!-- </div> -->
+        </div>
       </section>
-    </main>
+    </main> -->
 
     <!---FOOTER----->
-    <footer class="footer">
-      <div class="container footer-adres">
+    <!-- <footer class="footer">
+      <div class=" container footer-adres">
         <div>
-          <a class="header-logo" href="./index.html">
+          <a class="footer-logo" href="./index.html">
             <svg class="footer-svg" width="90px" height="70px">
               <use href="./images/symbol-defs.svg#plants-footer"></use>
             </svg>
@@ -444,7 +447,7 @@
         </div>
 
         <div class="footer-social">
-          <h3 class="footer-title">Присоеденяйтесь</h3>
+          <h3 class="footer-title">Join</h3>
 
           <ul class="footer-social-item">
             <li>
@@ -476,33 +479,29 @@
               </a>
             </li>
           </ul>
+           <div class="copyright">&#169 copyright</div> 
         </div>
-
-        <div class="footer-form-column-right">
-          <h3 class="footer-title">Подпишитесь на рассылку</h3>
-          <div class="footer-form">
-            <form action="#">
-              <label for="footer-user-email"></label>
-              <input
-                type="text"
-                name="footer-user-email"
-                id="footer-user-email"
-                class="footer-form-input"
-                placeholder="E-mail"
-              />
-            </form>
-            <button type="submit" class="btn footer-form-btn">
-              Подписаться
-              <svg class="footer-form-icon" width="24px" height="24px">
-                <use href="./images/symbol-defs.svg#icon-send"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
+         <ul class="footer-list-nave">
+            <li class="footer-item ">
+              <a class="link footer-nave" href="#aboutus">About us</a>
+            </li>
+            <li class="footer-item">
+              <a class="link footer-nave" href=".#ourplants">Plants</a>
+            </li>
+            <li class="footer-item">
+              <a class="link footer-nave" href=".#pricing">Pricing</a>
+            </li>
+            <li class="footer-item">
+              <a class="link footer-nave" href=".#ourcustomers">Our customers</a>
+            </li>
+            <li class="footer-item">
+              <a class="link footer-nave" href=".#ourcontacts">Contact us</a>
+            </li>
+          </ul>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="btn-close" data-modal-close>
           <svg width="11px" height="11px">
@@ -583,6 +582,6 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
   </body>
 </html>
