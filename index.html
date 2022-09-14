@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+      <link rel="stylesheet" href="./css/itc-slider.css">
   </head>
   <body>
     <!--HEADER-->
@@ -43,13 +44,81 @@
               <a class="link header-nave" href=".#ourcontacts">Contact us</a>
             </li>
           </ul>
-             <button data-menu-open class="header-btn" type="button">
+              <button data-menu-open class="header-btn" type="button">
           <svg class="header-icon-menu" width="60px" height="60px">
             <use href="./images/symbol-defs.svg#menu-mob"></use>
           </svg>
-        </button>
-        </nav>
-        
+        </button> 
+        </nav>  
+      </div>
+       <div class="backdrop is-hidden" data-menu>
+        <div class="mob-menu">
+          <button data-menu-close class="header-close-mob" type="button">
+            <svg class="" width="40px" height="40px">
+              <use href="./images/symbol-defs.svg#close-mob"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list">
+
+            <li>
+              <a class="link mob-menu-link" href="#aboutus"
+                >About us</a>
+            </li>
+
+            <li>
+              <a class="link mob-menu-link" href=".#ourplants"
+                >Plants</a>
+            </li>
+
+            <li>
+              <a class="link mob-menu-link" href=".#pricing"
+                >Pricing</a>
+            </li>
+
+            <li>
+              <a class="link mob-menu-link" href=".#ourcustomers"
+                >Our customers</a>
+            </li>
+
+            <li>
+              <a class="link mob-menu-link" href=".#ourcontacts"
+                >Contact us</a>
+            </li>
+           
+          </ul>
+          <ul>
+            <li>
+              <a class=" link mob-menu-tel" href="tel:+380991111111"
+                >+1 (234) 567 89 00</a>
+            </li>
+
+            <li>
+              <a class=" link mob-menu-mail" href="mailto:info@devstudio"
+                >plantland@email.com</a>
+            </li>
+
+          </ul>
+           <ul class="mob-menu-socialnetwork">
+            <li>
+              <a class="link mob-menu-social mob-menu-after" href="https://www.instagram.com/"
+                >Instagram
+              </a>
+            </li>
+            <li>
+              <a class="link mob-menu-social mob-menu-after" href="https://twitter.com/i/flow/login">
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a class="link mob-menu-social mob-menu-after" href="https://uk-ua.facebook.com/"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a class="link mob-menu-social" href="https://www.linkedin.com/">LinkedIn</a>
+            </li>
+          </ul> 
+        </div>
       </div>
     </header>
 
@@ -70,7 +139,7 @@
           </p>
           <div class="hero-button-wrapper">
           <button data-modal-open class="hero-button active-now" type="button">
-            BEST PLANTS >
+            Send a Request >
           </button>
           <button data-modal-open class="hero-button" type="button">
             LEARN MORE >
@@ -316,7 +385,7 @@
             <button class="description-button" type="button">SUCCULENTS</button>
           </div>
         </div>
-        <ul class="pricing-list">
+        <!-- <ul class="pricing-list">
 
           <li class="pricing-card">
             <img
@@ -369,8 +438,103 @@
             </p>
            <button class="price-button" type="button">ORDER NOW</button>
           </li>
-        </ul>
-         </div>
+        </ul> -->
+        
+    <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="7000" swipe: true,
+      refresh: true>
+      <div class="slider__container">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <div class="slider__item">
+              <!-- Контент 1 слайда -->
+            <li class="pricing-card">
+            <img
+              class="pricing-img"
+              src="./images/evergreens-1.png"
+              alt="flowers"
+            />
+            <p class="pricing-description-title">Floral Moss</p>
+            <p class="pricing-description-subtitle">
+            $33,00
+            </p>
+            <button class="price-button" type="button">ORDER NOW</button>
+          </li>
+            </div>
+            <div class="slider__item">
+              <!-- Контент 2 слайда -->
+               <li class="pricing-card">
+            <img
+              class="pricing-img"
+              src="./images/evergreens-2.png"
+              alt="flowers"
+            />
+            <p class="pricing-description-title">Areca Palm</p>
+            <p class="pricing-description-subtitle">
+           $22,00
+            </p>
+            <button class="price-button" type="button">ORDER NOW</button>
+          </li>
+            </div>
+            <div class="slider__item">
+              <!-- Контент 3 слайда -->
+           <li class="pricing-card">
+            <img
+              class="pricing-img"
+              src="./images/evergreens-3.jpg"
+              alt="flowers"
+            />
+            <p class="pricing-description-title">Monstera Obliqua</p>
+            <p class="pricing-description-subtitle">
+              $45,00
+            </p>
+              <button class="price-button" type="button">ORDER NOW</button>
+          </li>
+            </div>
+            <div class="slider__item">
+              <!-- Контент 4 слайда -->
+             <li class="pricing-card">
+            <img
+              class="pricing-img"
+              src="./images/evergreens-4.jpg"
+              alt="flowers"
+            />
+            <p class="pricing-description-title">Sansevieria Trifasciata</p>
+            <p class="pricing-description-subtitle">
+             $36,00
+            </p>
+           <button class="price-button" type="button">ORDER NOW</button>
+          </li>
+            </div>
+            <div class="slider__item">
+              <!-- Контент 5 слайда -->
+               <li class="pricing-card">
+            <img
+              class="pricing-img"
+              src="./images/evergreens-2.png"
+              alt="flowers"
+            />
+            <p class="pricing-description-title">Areca Palm</p>
+            <p class="pricing-description-subtitle">
+           $22,00
+            </p>
+            <button class="price-button" type="button">ORDER NOW</button>
+          </li>
+            </div>
+          </div>
+        </div>
+      </div>
+       <button class="slider__control" data-slide="prev"></button>
+      <button class="slider__control" data-slide="next"></button> 
+       <ol class="slider__indicators">
+    <li data-slide-to="1"></li>
+    <li data-slide-to="2"></li>
+    <li data-slide-to="3"></li>
+   <li data-slide-to="4"></li>
+    <li data-slide-to="5"></li>
+  </ol>
+    </div> 
+  </div>
+ 
       </section> 
 
        <!----OURCUSTOMERS------->
@@ -420,7 +584,7 @@
       <footer class="footer">
       <div class=" container footer-adres">
         <div class="footer-address-social">
-        <div>
+        <div сlass="footer-address-wrapper">
           <a class="footer-logo" href="./index.html">
             <svg class="footer-svg" width="90px" height="70px">
               <use href="./images/symbol-defs.svg#plants-footer"></use>
@@ -506,70 +670,66 @@
       </div>
     </footer> 
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="btn-close" data-modal-close>
-          <svg width="11px" height="11px">
+          <svg  class="btn-close-svg">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal-title">If you want to buy a plant, visit our 
+          offline store or the greenhouse, leave us a message.</p>
         <form action="#">
-          <div class="form-fied">
-            <label for="user-name" class="form-fied-text">Имя</label>
 
+          <div class="form-field">
+            <label for="user-name" class="form-field-text">Name</label>
             <span class="input-wrapper">
               <input
                 type="text"
                 name="user-name"
                 id="user-name"
+                placeholder="Enter your name*"
                 class="form-input"
               />
-              <svg class="form-icon" width="18px" height="18px">
-                <use href="./images/symbol-defs.svg#person-black"></use>
-              </svg>
             </span>
           </div>
 
-          <div class="form-fied">
-            <label for="user-tel" class="form-fied-text">Телефон</label>
+          <div class="form-field">
+            <label for="user-tel" class="form-field-text">Phone number</label>
             <span class="input-wrapper">
               <input
                 type="text"
                 name="user-tel"
                 id="user-tel"
+                placeholder="Enter your phone number*"
                 class="form-input"
               />
-              <svg class="form-icon" width="18px" height="18px">
-                <use href="./images/symbol-defs.svg#phone-black"></use>
-              </svg>
             </span>
           </div>
 
-          <div class="form-fied">
-            <label for="user-email" class="form-fied-text">Почта</label>
+          <div class="form-field">
+            <label for="user-email" class="form-field-text">E-mail</label>
             <span class="input-wrapper">
               <input
                 type="text"
                 name="user-email"
                 id="user-email"
+                placeholder="Enter your e-mail*"
                 class="form-input"
               />
-              <svg class="form-icon" width="18px" height="18px">
-                <use href="./images/symbol-defs.svg#email-black"></use>
-              </svg>
             </span>
           </div>
 
-          <div class="form-fied">
-            <label for="user-comment" class="form-fied-text">Комментарий</label>
+          <div class="form-field">
+            <label for="user-comment" class="form-field-text">Your comment</label>
             <textarea
               name="user-comment"
               id="user-comment"
               class="form-text"
-              placeholder="Введите текст"
+              placeholder="Enter your comment*"
             ></textarea>
           </div>
+
           <input
             type="checkbox"
             class="form-checkbox visually-hidden"
@@ -578,15 +738,17 @@
           />
           <label for="policy" class="check-text"
             ><span class="check-item"
-              ><svg class="check-icon" width="11px" height="8px">
+              ><svg class="check-icon" width="18px" height="14px">
                 <use href="./images/symbol-defs.svg#vector-1"></use></svg></span
-            >Соглашаюсь с рассылкой и принимаю
-            <a class="check-text-link" href="">Условия договора</a></label
+            >I agree with the newsletter and accept
+            <a class="check-text-link" href="">the terms of the contract</a></label
           >
-          <button type="submit" class="btn form-btn">Отправить</button>
+          <button type="submit" class="btn form-btn"> send a request</button>
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script> 
+    <script src="./js/menu.js"></script>
+    <script defer src="./js/itc-slider.js"></script>
   </body>
 </html>
