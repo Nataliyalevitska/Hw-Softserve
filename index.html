@@ -273,14 +273,15 @@
             We sell both indoor and outdoor varieties of plants.
           </p>
           <div class="ourplants-button-wrapper">
-            <button class="ourplants-button nave-button" type="button">
+            <button class="ourplants-button nave-button" type="button" data-indoor>
               INDOOR
             </button>
-            <button class="ourplants-button" type="button">OUTDOOR</button>
+            <button class="ourplants-button" type="button" data-outdoor>OUTDOOR</button>
           </div>
         </div>
-        <ul class="ourplants-list">
-          <li class="ourplants-card">
+        <div class="gallery">
+          <!-- <ul class="ourplants-list">
+           <li class="ourplants-card">
             <img
               class="ourplants-img"
               src="./images/indoor-1.png"
@@ -332,8 +333,153 @@
               decoration of your room or office. These plants will make a great
               impression on your guests.
             </p>
+          </li> 
+        </ul>   -->
+        </div>
+
+
+
+
+
+        <!-- <div class="slider" data-slider="itc-slider" data-loop="true" 
+        data-autoplay="true" data-interval="7000" swipe: true, refresh: true>
+  <div class="slider__wrapper">
+    <div class="slider__items">
+      <div class="slider__item"> -->
+        <!-- Контент 1 слайда -->
+          <!-- <li class="ourplants-card">
+            <img
+              class="ourplants-img"
+              src="./images/indoor-1.png"
+              alt="flowers"
+            />
+            <p class="ourplants-description-title">Small Ornamental Plants</p>
+            <p class="ourplants-description-subtitle">
+              Such plants will fit on any windowsill, decorate your home or work
+              table. Chlorophytum, money plants, aglaonema are not demanding in
+              care but very beautiful.
+            </p>
           </li>
-        </ul>
+      </div>
+      <div class="slider__item"> -->
+        <!-- Контент 2 слайда -->
+          <!-- <li class="ourplants-card">
+            <img
+              class="ourplants-img"
+              src="./images/indoor-2.png"
+              alt="flowers"
+            />
+            <p class="ourplants-description-title">Indoor Trees</p>
+            <p class="ourplants-description-subtitle">
+              It's a beautiful and original option for a large room. A small
+              indoor tree will add some zest to the office or a large living
+              room. Large dracaena, ficus, alocasia will be a great option for
+              your space.
+            </p>
+          </li>
+      </div>
+      <div class="slider__item"> -->
+        <!-- Контент 3 слайда -->
+          <!-- <li class="ourplants-card">
+            <img
+              class="ourplants-img"
+              src="./images/indoor-3.png"
+              alt="flowers"
+            />
+            <p class="ourplants-description-title">Plants in Florarium</p>
+            <p class="ourplants-description-subtitle">
+              These are neatly planted compositions of succulents, grassroots,
+              decorative ferns. Plants are selected so that they are in perfect
+              harmony. Order your unique set of plants!
+            </p>
+          </li>
+      </div>
+       <div class="slider__item"> -->
+        <!-- Контент 4 слайда -->
+         <!-- <li class="ourplants-card">
+            <img
+              class="ourplants-img"
+              src="./images/indoor-4.png"
+              alt="flowers"
+            />
+            <p class="ourplants-description-title">Big Ornamental Plants</p>
+            <p class="ourplants-description-subtitle">
+              Charming pachypodium, yucca, monstera will become a stunning
+              decoration of your room or office. These plants will make a great
+              impression on your guests.
+            </p>
+          </li>
+      </div>
+       <div class="slider__item"> -->
+        <!-- Контент 5 слайда -->
+          <!-- <li class="ourplants-card">
+            <img
+              class="ourplants-img"
+              src="./images/outdoor-1.png"
+              alt="flowers"
+            />
+            <p class="ourplants-description-title">Plants in Florarium</p>
+            <p class="ourplants-description-subtitle">
+              These are neatly planted compositions of succulents, grassroots,
+              decorative ferns. Plants are selected so that they are in perfect
+              harmony. Order your unique set of plants!
+            </p>
+          </li>
+      </div>
+       <div class="slider__item"> -->
+        <!-- Контент 6 слайда -->
+          <!-- <li class="ourplants-card">
+            <img
+              class="ourplants-img"
+              src="./images/outdoor-2.png"
+              alt="flowers"
+            />
+            <p class="ourplants-description-title">Plants in Florarium</p>
+            <p class="ourplants-description-subtitle">
+              These are neatly planted compositions of succulents, grassroots,
+              decorative ferns. Plants are selected so that they are in perfect
+              harmony. Order your unique set of plants!
+            </p>
+          </li>
+      </div>
+       <div class="slider__item"> -->
+        <!-- Контент 7 слайда -->
+          <!-- <li class="ourplants-card">
+            <img
+              class="ourplants-img"
+              src="./images/outdoor-3.png"
+              alt="flowers"
+            />
+            <p class="ourplants-description-title">Plants in Florarium</p>
+            <p class="ourplants-description-subtitle">
+              These are neatly planted compositions of succulents, grassroots,
+              decorative ferns. Plants are selected so that they are in perfect
+              harmony. Order your unique set of plants!
+            </p>
+          </li>
+      </div>
+       <div class="slider__item"> -->
+        <!-- Контент 8 слайда -->
+          <!-- <li class="ourplants-card">
+            <img
+              class="ourplants-img"
+              src="./images/outdoor-4.png"
+              alt="flowers"
+            />
+            <p class="ourplants-description-title">Plants in Florarium</p>
+            <p class="ourplants-description-subtitle">
+              These are neatly planted compositions of succulents, grassroots,
+              decorative ferns. Plants are selected so that they are in perfect
+              harmony. Order your unique set of plants!
+            </p>
+          </li>
+      </div>
+    </div>
+  </div> -->
+  <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+  <!-- <button class="slider__control" data-slide="prev"></button>
+  <button class="slider__control" data-slide="next"></button>
+</div> -->
         </div>
       </section>
 </div>  
@@ -510,16 +656,60 @@
                <li class="pricing-card">
             <img
               class="pricing-img"
-              src="./images/evergreens-2.png"
+              src="./images/succulents-1.png"
               alt="flowers"
             />
-            <p class="pricing-description-title">Areca Palm</p>
+            <p class="pricing-description-title">Graptosedum Darley</p>
             <p class="pricing-description-subtitle">
-           $22,00
+           $32,00
             </p>
             <button class="price-button" type="button">ORDER NOW</button>
           </li>
             </div>
+              <div class="slider__item">
+              <!-- Контент 6 слайда -->
+               <li class="pricing-card">
+            <img
+              class="pricing-img"
+              src="./images/succulents-2.png"
+              alt="flowers"
+            />
+            <p class="pricing-description-title">Haworthia Venosa</p>
+            <p class="pricing-description-subtitle">
+           $48,00
+            </p>
+            <button class="price-button" type="button">ORDER NOW</button>
+          </li>
+            </div>
+              <div class="slider__item">
+              <!-- Контент 7 слайда -->
+               <li class="pricing-card">
+            <img
+              class="pricing-img"
+              src="./images/succulents-3.png"
+              alt="flowers"
+            />
+            <p class="pricing-description-title">Silver Torch</p>
+            <p class="pricing-description-subtitle">
+           $24,00
+            </p>
+            <button class="price-button" type="button">ORDER NOW</button>
+          </li>
+            </div>
+              <div class="slider__item">
+              <!-- Контент 8 слайда -->
+               <li class="pricing-card">
+            <img
+              class="pricing-img"
+              src="./images/succulents-4.png"
+              alt="flowers"
+            />
+            <p class="pricing-description-title">Notocactus Roseoluteus</p>
+            <p class="pricing-description-subtitle">
+          $33,00
+            </p>
+            <button class="price-button" type="button">ORDER NOW</button>
+          </li>
           </div>
         </div>
       </div>
@@ -531,11 +721,13 @@
     <li data-slide-to="3"></li>
    <li data-slide-to="4"></li>
     <li data-slide-to="5"></li>
+     <li data-slide-to="6"></li>
+      <li data-slide-to="7"></li>
+       <li data-slide-to="8"></li>
   </ol>
     </div> 
   </div>
- 
-      </section> 
+   </section> 
 
        <!----OURCUSTOMERS------->
 
@@ -749,6 +941,7 @@
     </div>
     <script src="./js/modal.js"></script> 
     <script src="./js/menu.js"></script>
+      <script src="./js/ourplants-section.js"></script>
     <script defer src="./js/itc-slider.js"></script>
   </body>
 </html>

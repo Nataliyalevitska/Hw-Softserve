@@ -927,11 +927,16 @@ font-family: 'Noto Serif:ital', serif;
     .ourplants-button {
       font-size: 20px;
     }
-  .ourplants-list {
+       .gallery{
+         display: flex;
+    flex-wrap: nowrap;
+      justify-content: center;
+       }
+   .ourplants-list {
     display: flex;
     flex-wrap: nowrap;
       justify-content: center;
-    }
+    } 
   .ourplants-description-title {
           font-size: 28px;
    }
@@ -940,10 +945,15 @@ font-family: 'Noto Serif:ital', serif;
           font-size: 18px;
      }
   .ourplants-card {
-                  width: 350px;
+                  width: 330px;
                   height: 550px;
     }
-   .nave-button::after {
+    .ourplants-img{
+  width: 330px;
+  height: 380px;
+  border-radius: 10px;
+}
+    /* .nave-button::after {
                   content: "";
                   width: 90px;
                   height: 4px;
@@ -951,8 +961,8 @@ font-family: 'Noto Serif:ital', serif;
                   border-radius: 2px;
                   display: block;
                   position: absolute;
-   }
-}
+   } */
+} 
 
 
 /* ----OURCONTACTS------- */
@@ -1035,14 +1045,14 @@ font-size: 20px;
     
       .ourcontacts-subtitle {
         font-weight: 700;
-        font-size: 30px;
+        font-size: 36px;
         margin-top: 30px;
         margin-right: 30px;
       }
     
       .ourcontacts-info {
         font-weight: 700;
-        font-size: 30px;
+        font-size: 36px;
       }
 }
 
@@ -1224,13 +1234,13 @@ background: linear-gradient(30deg, #d3deb2, #e9d4e9);
     }
         
  .pricing-card {
-                  width: 350px;
+                  width: 450px;
                   height: 650px;
    }
         
    .pricing-img {
-                  width: 420px;
-                  height: 450px;
+                  width: 450px;
+                  height: 470px;
     }
         
    .pricing-description-title {
@@ -1518,6 +1528,20 @@ color: var(--middle-white);
                justify-content: space-between;
                 margin-top: 20px; 
              }
+                         .footer-social-link {
+                           width: 60px;
+                           height: 60px;
+                           border-radius: 50%;
+                           display: flex;
+                           align-items: center;
+                           justify-content: center;
+                           background-color: var(--green);
+                           margin-right: 20px;
+            
+                           transition-property: background-color;
+                           transition-duration: 250ms;
+                           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                         }
              .footer {
                padding: 50px 50px; 
             } 
