@@ -727,7 +727,7 @@
         </button>
         <p class="modal-title">If you want to buy a plant, visit our 
           offline store or the greenhouse, leave us a message.</p>
-        <form action="#">
+        <form action="#" class="feedback-form">
 
           <div class="form-field">
             <label for="user-name" class="form-field-text">Name</label>
@@ -736,6 +736,7 @@
                 type="text"
                 name="user-name"
                 id="user-name"
+                required
                 placeholder="Enter your name*"
                 class="form-input"
               />
@@ -749,6 +750,7 @@
                 type="text"
                 name="user-tel"
                 id="user-tel"
+                required
                 placeholder="Enter your phone number*"
                 class="form-input"
               />
@@ -762,6 +764,7 @@
                 type="text"
                 name="user-email"
                 id="user-email"
+                required
                 placeholder="Enter your e-mail*"
                 class="form-input"
               />
@@ -785,7 +788,7 @@
             id="policy"
           />
           <label for="policy" class="check-text"
-            ><span class="check-item"
+            ><span class="check-item"  
               ><svg class="check-icon" width="18px" height="14px">
                 <use href="./images/symbol-defs.svg#vector-1"></use></svg></span
             >I agree with the newsletter and accept
