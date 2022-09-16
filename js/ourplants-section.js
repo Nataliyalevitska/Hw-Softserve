@@ -1,5 +1,4 @@
 const refs = {
-  body: document.querySelector("body"),
   btnNav: document.querySelector(".ourplants-button-wrapper"),
   galleryDiv: document.querySelector(".gallery"),
   btnIndr: document.querySelector("button[data-indoor]"),
@@ -7,8 +6,6 @@ const refs = {
 };
 
 refs.btnNav.addEventListener("click", (e) => {
-  refs.galleryDiv.insertAdjacentHTML("afterbegin", hendlIndoor);
-
   if (e.target.classList.contains("ourplants-button-wrapper")) {
     return;
   }
